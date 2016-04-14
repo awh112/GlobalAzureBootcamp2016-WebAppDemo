@@ -115,7 +115,7 @@ In this task you will start creating a new ASP.NET MVC project with support for 
 
 	In the drop-down menus, select **Cloud - Single Organization** and **Single Sign On, Read directory data**. Enter the domain for your Azure AD directory (e.g. myADdomainoutlook.onmicrosoft.com) and then click **OK**. You can get the domain name from the Domains tab for the Default Directory on the azure portal (see the next image down).
 
-    ![Changing Authentication_](./images/changingAutentication.png)
+    ![Changing Authentication_](./images/changingAutentication_updated.png)
     
     _Changing Authentication_
 
