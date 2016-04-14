@@ -113,7 +113,7 @@ In this task you will start creating a new ASP.NET MVC project with support for 
 
 	These options can be used to automatically register your application with Azure AD as well as to automatically configure your application to integrate with Azure AD. You don't have to use the **Change Authentication** dialog to register and configure your application, but it makes it much easier. If you are using Visual Studio 2012 for example, you can still manually register the application in the Azure Management Portal and update its configuration to integrate with Azure AD.
 
-	In the drop-down menus, select **Cloud - Single Organization** and **Single Sign On, Read directory data**. Enter the domain for your Azure AD directory (e.g. myADdomainoutlook.onmicrosoft.com) and then click **OK**. You can get the domain name from the Domains tab for the Default Directory on the azure portal (see the next image down).
+	In the drop-down menu, select **Cloud - Single Organization**.  Below the drop-down menu, select **Read directory data**. Enter the domain for your Azure AD directory (e.g. myADdomainoutlook.onmicrosoft.com) and then click **OK**. You can get the domain name from the Domains tab for the Default Directory on the azure portal (see the next image down).
 
     ![Changing Authentication_](./images/changingAutentication_updated.png)
     
