@@ -462,6 +462,14 @@ In this task you will verify that the Web API service you built in the previous 
 
 > _Internet Explorer option_
 
+> **Note:** Open your Web.Config file and make sure you have a connection string that points to a local database.  It should look something like this:
+
+>````
+><connectionStrings>
+>    <add name="DefaultConnection" connectionString="Data >Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-GeekQuiz-20141209041032.mdf;Initial >Catalog=aspnet-GeekQuiz-20141209041032;Integrated Security=True" providerName="System.Data.SqlClient" />
+>  </connectionStrings>
+>````
+
 1. Press **F5** to run the solution. The Log in page should appear in the browser.
 
     > **Note:** When the application starts, the default MVC route is triggered, which by default is mapped to the Index action of the HomeController class. Since HomeController is restricted to authenticated users (remember that you decorated that class with the Authorize attribute previously) and there is no user authenticated yet, the application redirects the original request to the log in page.
