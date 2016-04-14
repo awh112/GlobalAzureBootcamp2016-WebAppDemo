@@ -109,7 +109,7 @@ In this task you will start creating a new ASP.NET MVC project with support for 
     
     _Creating a new project with the MVC template, including Web API components_
 
-4. On the **Change Authentication** dialog, select **Organizational Accounts**. 
+4. On the **Change Authentication** dialog, select **Work And School Accounts**.
 
 	These options can be used to automatically register your application with Azure AD as well as to automatically configure your application to integrate with Azure AD. You don't have to use the **Change Authentication** dialog to register and configure your application, but it makes it much easier. If you are using Visual Studio 2012 for example, you can still manually register the application in the Azure Management Portal and update its configuration to integrate with Azure AD.
 
@@ -461,6 +461,14 @@ In this task you will verify that the Web API service you built in the previous 
 > ![Internet Explorer option](./images/runInIE.png)
 
 > _Internet Explorer option_
+
+> **Note:** Open your Web.Config file and make sure you have a connection string that points to a local database.  It should look something like this:		
+ 		
+> ````		
+ <connectionStrings>		
+     <add name="DefaultConnection" connectionString="Data Source=(LocalDb)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\aspnet-GeekQuiz-20141209041032.mdf;Initial Catalog=aspnet-GeekQuiz-20141209041032;Integrated Security=True" providerName="System.Data.SqlClient" />		
+  </connectionStrings>		
+````		
 
 1. Press **F5** to run the solution. The Log in page should appear in the browser.
 
